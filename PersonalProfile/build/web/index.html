@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Personal Profile Website</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <style>
+             body {
+            font-family: 'courier new', sans-serif;
+            background: #ccccff;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+             }
+                         
+             h1 {
+            font-family: 'arial', sans-serif;
+            text-align: center;
+            color:black;
+            margin-bottom: 30px;
+            }
+            
+            input[type="submit"] { 
+                 background-color: #4CAF50;
+                 color: white;
+                 padding: 10px 20px;
+            }
+               
+            .container {
+             background-color:#e6e6fa;
+            border: 1px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+          }
+            
+        
+        </style>
+    
+    </head>
+    
+    <body>
+    <marquee scrollamount="14"><h1>Personal Profile Information Form</h1></marquee><hr>
+        <div class="container">            
+        <form action="ProfileServlet" method="post">
+            <label>Name:</label><br><input type="text" name="name" required><br>
+            <label>Student ID:</label><br><input type="text" name="studentId" required><br>
+            <label>Program:</label><br><input type="text" name="program" required><br>
+            <label>Email:</label><br><input type="text" name="email" required><br>
+            <label>Hobbies:</label><br><input type="text" name="hobbies" required><br>
+            <label>Self-Introduction:<br></label><textarea name="introduction" rows="5" cols="40"></textarea><br>
+           
+            <center><input type="submit" value="Submit Form"></center>
+       </form>
+            <br>
+        
+        </div>
+    <div class="container">
+        <form action="viewProfiles.jsp">
+            <input type="submit" value="View All Profiles">
+        </form>
+    </div>
+    </body>
+</html>
