@@ -72,7 +72,8 @@
 </head>
 <body>
     <% ProfileBean p = (ProfileBean) request.getAttribute("profileBean"); %>
-    <h1>Personal Profile Details</h1>   <hr>
+    <h1>Profile Saved Successfully!</h1>
+    <h1>Personal Profile Details</h1><hr>
     <div>
         <table>
         <tr>
